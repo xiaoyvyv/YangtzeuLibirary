@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.AboutActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:animateLayoutChanges="true"
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:visibility="gone"
+                android:id="@+id/about_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="关于" />
+        </android.support.design.widget.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/BG_Img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription" />
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <net.custom.FallingView.FallingView
+                android:id="@+id/fallingView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:id="@+id/top_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/Me_Img"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/ic_launcher_round"
+                        app:civ_border_color="#bbffffff"
+                        app:civ_border_width="2.5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:layout_below="@id/top_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/about_text_head"
+                        android:text="个人简介"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="名字："
+                            style="@style/about_text_body" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:text="HuaiYv. Wang"
+                            style="@style/about_text_body" />
+                    </LinearLayout>
+                    <TextView
+                        android:text="职业：Student"
+                        style="@style/about_text_body" />
+                    <TextView
+                        android:text="坐标：湖北 荆州"
+                        style="@style/about_text_body" />
+                    <TextView
+                        android:text="联系方式"
+                        style="@style/about_text_head" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="谷歌邮箱："
+                            style="@style/about_text_body" />
+                        <TextView
+                            android:id="@+id/my_goole_mail"
+                            android:text="@string/u_whystart981229_gmail_com_u"
+                            style="@style/about_text_body" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            style="@style/about_text_body"
+                            android:text="QQ   邮箱：" />
+
+                        <TextView
+                            android:id="@+id/my_mail"
+                            android:text="@string/u_1223414335_qq_com_u"
+                            style="@style/about_text_body" />
+                    </LinearLayout>
+                    <TextView
+                        android:text="出没地点"
+                        style="@style/about_text_head" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="简    书："
+                            style="@style/about_text_body" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/my_jianshu"
+                            android:text="@string/u_http_www_jianshu_com_u_f9a6ac792b1f_u"
+                            style="@style/about_text_body" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="GitHub："
+                            style="@style/about_text_body" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/my_github"
+                            android:text="@string/u_https_github_com_xiaoyvyv_u"
+                            style="@style/about_text_body" />
+                    </LinearLayout>
+                    <TextView
+                        android:text="关注"
+                        style="@style/about_text_head" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="2dp"
+                            app:cardElevation="2.5dp">
+                        <ImageView
+                            android:scaleType="fitXY"
+                            android:id="@+id/QQ_Img"
+                            android:layout_width="100dp"
+                            android:layout_height="130dp"/>
+                        </android.support.v7.widget.CardView>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp"
+                            style="@style/MatchMatch"
+                            android:layout_weight="2">
+                            <TextView
+                                android:textIsSelectable="true"
+                                android:textStyle="bold"
+                                android:gravity="center_vertical"
+                                android:text="腾讯QQ：1223414335"
+                                android:layout_weight="1"
+                                style="@style/about_text_body_head" />
+                            <TextView
+                                android:gravity="center_vertical"
+                                android:id="@+id/my_sinaweibo"
+                                android:text="关注我，时刻查看最近动态"
+                                android:layout_weight="1"
+                                style="@style/about_text_body" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="2dp"
+                            app:cardElevation="2.5dp">
+                        <ImageView
+                            android:id="@+id/WX_Img"
+                            android:scaleType="fitXY"
+                            android:layout_width="100dp"
+                            android:layout_height="130dp" />
+                        </android.support.v7.widget.CardView>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2">
+                            <TextView
+                                android:textIsSelectable="true"
+                                android:textStyle="bold"
+                                android:gravity="center_vertical"
+                                android:text="@string/u_whysbelief_u"
+                                android:layout_weight="1"
+                                style="@style/about_text_body_head" />
+                            <TextView
+                                android:gravity="center_vertical"
+                                android:text="有问题反馈可加微信，打开微信扫二维码即可"
+                                android:layout_weight="1"
+                                style="@style/about_text_body" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="关于我\1223414335@qq.com"/>
+            </LinearLayout>
+
+        </FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <ImageView
+        android:tint="?attr/colorPrimary"
+        android:id="@+id/image_rotate"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_pause_circle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        tools:ignore="ContentDescription" />
+
+    <tyrantgit.widget.HeartLayout
+        android:layout_marginBottom="-5dp"
+        android:id="@+id/heart_layout"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end" />
+</android.support.design.widget.CoordinatorLayout>

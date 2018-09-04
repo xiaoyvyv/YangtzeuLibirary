@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="20dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <EditText
+            android:id="@+id/baseweb_input"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:ems="20"
+            android:hint="请输入网址或内容"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

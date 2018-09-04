@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ImageActivity">
+
+    <net.custom.TouchImageView
+        android:id="@+id/TouchImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@android:color/black"
+        android:fitsSystemWindows="true" />
+    <android.support.design.widget.AppBarLayout
+        android:paddingTop="20dp"
+        android:fitsSystemWindows="true"
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/translate"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:subtitle="详情"
+            app:title="图片名字" />
+        <net.custom.WebViewProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/img_menu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_point"
+        android:contentDescription="@string/menu" />
+
+</android.support.design.widget.CoordinatorLayout>

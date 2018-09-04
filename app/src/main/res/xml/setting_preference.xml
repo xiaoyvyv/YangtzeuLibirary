@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference android:title="长江大学图书馆">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://lib.yangtzeu.edu.cn/" />
+    </Preference>
+    <Preference
+        android:key="ToAbout"
+        android:title="关于">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="cn.edu.yangtzeu.calis.yangtzeulibirary.ui.activity.AboutActivity"
+            android:targetPackage="cn.edu.yangtzeu.calis.yangtzeulibirary" />
+    </Preference>
+    <Preference
+        android:key="ShareText"
+        android:title="分享">
+    </Preference>
+    <PreferenceCategory android:title="账户">
+        <Preference
+            android:key="Login"
+            android:title="切换用户" />
+        <Preference
+            android:key="ChangePassword"
+            android:title="修改密码" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="基础设置">
+        <EditTextPreference
+            android:defaultValue="@string/SavePath"
+            android:key="FileLocation"
+            android:dialogMessage="第一个字符不能为 /"
+            android:summary="@string/SavePath"
+            android:title="文件下载位置" />
+        <Preference
+            android:key="Update"
+            android:summary="已经是最新版本"
+            android:title="检查更新">
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="开发者信息">
+        <Preference
+            android:key="myApp"
+            android:summary="长大人的App"
+            android:title="我的应用集">
+        </Preference>
+        <Preference
+            android:summary="QQ：1223414335"
+            android:title="联系开发者">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://qm.qq.com/cgi-bin/qm/qr?k=KUnqv6xI3HOmKrgmxQNR5QSNpOAHRwaX" />
+        </Preference>
+        <Preference
+            android:summary="QQ：617082514"
+            android:title="推荐群：微技术">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://qm.qq.com/cgi-bin/qm/qr?k=dezJxL7E5dTPk0-q5Is6tKA8mPHgIfxy" />
+        </Preference>
+        <Preference
+            android:summary="简书ID：简小玉"
+            android:title="简书">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.jianshu.com/u/f9a6ac792b1f" />
+        </Preference>
+        <Preference
+            android:key="pay"
+            android:summary="支付宝红包，大家都懂的"
+            android:title="支付宝红包（最高99元）">
+        </Preference>
+        <Preference
+            android:key="donate"
+            android:summary="不需要太多, 只要些许鼓励^_^"
+            android:title="捐赠">
+            <!--<intent-->
+            <!--android:action="android.intent.action.VIEW"-->
+            <!--android:data="alipayqr://platformapi/startapp?saId=10000007&amp;clientVersion=3.7.0.0718&amp;qrcode=https%3A%2F%2Fqr.alipay.com%2FFKX090017A88JZT5T39YB8%3F_s%3Dweb-other" />-->
+        </Preference>
+        <Preference
+            android:key="OpenCode"
+            android:summary="开发涉及的开源框架及组件"
+            android:title="开源许可">
+        </Preference>
+
+    </PreferenceCategory>
+</PreferenceScreen>

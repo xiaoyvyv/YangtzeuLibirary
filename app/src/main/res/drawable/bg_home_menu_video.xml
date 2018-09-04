@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="true"
+        android:state_pressed="true"
+        android:drawable="@mipmap/bg_main_menu_video_pre" />
+    <item
+        android:state_enabled="true"
+        android:state_checked="true"
+        android:drawable="@mipmap/bg_main_menu_video_pre" />
+    <item android:drawable="@mipmap/bg_main_menu_video_nor" />
+</selector>

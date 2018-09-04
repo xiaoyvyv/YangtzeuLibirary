@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical"
+    tools:context=".ui.activity.IndexActivity">
+
+    <ImageView
+        android:alpha="0.7"
+        android:layout_margin="5dp"
+        android:id="@+id/folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_folder"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:layout_toStartOf="@+id/child_size"
+        android:gravity="start|center_vertical"
+        android:alpha="0.7"
+        android:singleLine="true"
+        android:id="@+id/node_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/folder"
+        android:layout_toRightOf="@+id/folder"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/child_size" />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:alpha="0.7"
+        android:id="@+id/child_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/red"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4DB6AC</color>
+    <color name="colorPrimaryDark">#4DB6AC</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="translate">#00000000</color>
+    <color name="black_20">#20000000</color>
+    <color name="white_d">#dddddd</color>
+    <color name="black">#000000</color>
+    <color name="black_10">#10000000</color>
+    <color name="black_15">#15000000</color>
+    <color name="black_50">#50000000</color>
+    <color name="black_30">#30000000</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="white_e">#eeeeee</color>
+    <color name="white_fa">#fafafa</color>
+    <color name="white_a">#aaaaaa</color>
+    <color name="white">#ffffff</color>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/save"
+        android:orderInCategory="100"
+        android:title="@string/collection"
+        android:icon="@drawable/ic_save"
+        app:showAsAction="never"
+        tools:ignore="AlwaysShowAction" />
+    <item
+        android:icon="@drawable/ic_refresh"
+        android:id="@+id/baseweb_refresh"
+        android:orderInCategory="100"
+        android:title="@string/baseweb_refresh"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="100"
+        android:title="@string/share"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/baseweb_copy"
+        android:orderInCategory="100"
+        android:title="@string/baseweb_copy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/baseweb_open"
+        android:orderInCategory="100"
+        android:title="@string/baseweb_open"
+        app:showAsAction="never" />
+</menu>

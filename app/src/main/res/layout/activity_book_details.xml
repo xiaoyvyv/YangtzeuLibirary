@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:targetApi="lollipop"
+    tools:context=".ui.activity.NewsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/details" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:id="@+id/book_image"
+                        android:layout_width="140dp"
+                        android:layout_height="200dp"
+                        android:contentDescription="@string/pic_" />
+
+                    <LinearLayout
+                        android:layout_marginStart="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:singleLine="true"
+                            android:id="@+id/name"
+                            android:alpha="0.7"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:id="@+id/author"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"/>
+                        <TextView
+                            android:focusable="true"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:id="@+id/chuban"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:id="@+id/year"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:focusable="true"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:id="@+id/isbn"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:id="@+id/pages"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:lineSpacingExtra="7dp"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:id="@+id/kind"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black_20"/>
+                <TextView
+                    android:alpha="0.7"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_margin="10dp"
+                    android:text="@string/jie_sao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:lineSpacingExtra="2.5dp"
+                    android:alpha="0.5"
+                    android:textSize="15sp"
+                    android:id="@+id/summaryView"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@color/white"
+                android:id="@+id/find_trip"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/green"
+                android:text="馆藏查询中..."
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <LinearLayout
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                android:background="@color/white_fa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/where_lib"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:focusable="true">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:alpha="0.7"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_margin="10dp"
+                        android:text="@string/where_lib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="RelativeOverlap" />
+                    <ImageView
+                        android:id="@+id/right"
+                        android:alpha="0.7"
+                        android:tint="@color/black"
+                        android:src="@drawable/ic_right"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:contentDescription="@string/more" />
+
+                </RelativeLayout>
+
+                <ScrollView
+                    android:visibility="gone"
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp">
+                    <LinearLayout
+                        android:id="@+id/where_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

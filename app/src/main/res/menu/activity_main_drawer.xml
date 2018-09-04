@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_book_list"
+            android:icon="@mipmap/book_list"
+            android:title="@string/book_list" />
+        <item
+            android:id="@+id/nav_my_book"
+            android:icon="@mipmap/book_self"
+            android:title="@string/my_book" />
+        <item
+            android:id="@+id/nav_search_list"
+            android:icon="@mipmap/search_list"
+            android:title="@string/search_list" />
+        <item
+            android:id="@+id/nav_private_label"
+            android:icon="@mipmap/private_label"
+            android:title="@string/private_label" />
+    </group>
+
+    <item android:title="@string/well_known_saying">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@mipmap/setting"
+                android:title="@string/setting" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@mipmap/share"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@mipmap/logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>
