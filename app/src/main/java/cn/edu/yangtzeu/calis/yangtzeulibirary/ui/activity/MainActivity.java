@@ -42,7 +42,6 @@ public class MainActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener,IMainView {
 
     private IMainPresenter iMainPresenter;
-    private Toolbar toolbar;
     private FrameLayout fragment_container;
     private BottomNavigationView mBottomNavigationView;
 
